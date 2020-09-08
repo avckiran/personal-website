@@ -5,12 +5,13 @@ export const Summary = () => {
   return (
     <>
         <Col xs={12} md={8}>
-         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime commodi omnis aspernatur, in facilis, excepturi odit voluptate magnam, dolorem blanditiis quam laboriosam culpa saepe. Similique reprehenderit accusamus labore commodi sapiente voluptates fugiat ipsa voluptatibus totam ratione alias, adipisci ullam iure explicabo asperiores expedita autem impedit rem repellendus unde eligendi aliquam? Nemo eum reprehenderit cupiditate odit incidunt consequatur labore quaerat dolore pariatur a cumque architecto velit ad autem rem, temporibus quas possimus, alias at dignissimos! Eos, cumque possimus sit neque beatae quaerat assumenda optio animi ea, amet quidem asperiores fugit blanditiis illum in pariatur iusto dignissimos velit natus expedita nam ex quae? Modi est minima nesciunt deserunt vel aliquid adipisci veritatis doloremque voluptate reprehenderit molestias ab facilis, odit non aliquam libero laboriosam similique fuga, tempore inventore ex alias! Hic quisquam aspernatur veniam porro nesciunt minus voluptas consectetur dolor a enim, accusantium eaque dolorum sequi ipsam harum? Facere assumenda non cupiditate ipsam optio, voluptatem quis ab nobis fugit dolores? Facilis provident expedita inventore fugiat nisi minima illo iste sit consequuntur maxime laudantium voluptate facere, alias ab eum animi? Sunt tempore excepturi quaerat esse consectetur dolor distinctio a enim nisi facilis voluptatum nesciunt perferendis incidunt autem labore assumenda
+         <h4>Overview:</h4>
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, aliquid similique adipisci tempora modi esse iste doloribus architecto tenetur doloremque.
         </Col>
         <Col xs={12} md={4}>
           <h4>Education:</h4>
-          <Card style={{ width: '23rem' }} className="mb-3">
-            <Card.Img variant="top" src="https://www.nicepng.com/png/detail/271-2714436_utd-the-university-of-texas-at-dallas-ut.png" />
+          <Card style={{ width: '21rem' }} className="mb-3">
+            <Card.Img variant="top" src="https://chandrakiran-achanta-personal.s3.amazonaws.com/experience-companies-logo/utd-logo.png" />
             <Card.Body>
               <Card.Title>Masters in Business Analytics</Card.Title>
               <Card.Text>
@@ -26,8 +27,10 @@ export const Summary = () => {
               </Card.Text>
             </Card.Body>
           </Card>
-          <Card style={{ width: '23rem' }}>
-            <Card.Header style={{backgroundColor: 'green', color: 'white'}}>Acharya Nagarjuna University</Card.Header>
+          <Card style={{ width: '21rem' }}>
+            <Card.Header style={{backgroundColor: '#2c3e50', color: 'white'}}>
+              <strong>Acharya Nagarjuna University</strong>
+            </Card.Header>
             <Card.Body>
               <Card.Title>Bachelors in Computer Science</Card.Title>
               <Card.Text>
@@ -36,7 +39,8 @@ export const Summary = () => {
                   <strong>GPA: 3.8</strong>
                   </div>
                 <ul>
-                  <li>Recepient of Dean's Impact Scholarship</li>
+                  <li>Majored in Mathematics, Physics and Computer Science</li>
+                  <li>Part of literary committee at the college and responsible to technical news reporting and wrote several articles</li>
                 </ul>
               </Card.Text>
             </Card.Body>
