@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Row, Button, ButtonGroup } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 
 export const NavButtons = ({ onSectionChange }) => {
 
-  const [currentSection, setCurrentSection] = useState('summary')
+  const [currentSection, setCurrentSection] = useState('experience')
 
   const buttonClick = e => {
     setCurrentSection(e.currentTarget.id);
@@ -31,8 +32,8 @@ export const NavButtons = ({ onSectionChange }) => {
 
 
   return (
-    <Row className="mb-5">
-       <ButtonGroup size="lg" className="w-100">
+    <Row className="mb-5 justify-content-center nav-bttn-row">
+       <ButtonGroup size="lg" className="w-auto">
           { sections.map( section => (
             <Button
               key={section.id}
@@ -46,4 +47,8 @@ export const NavButtons = ({ onSectionChange }) => {
         </ButtonGroup>
     </Row>
   );
+}
+
+NavButtons.propTypes = {
+  onSectionChange: PropTypes.func.isRequired
 }

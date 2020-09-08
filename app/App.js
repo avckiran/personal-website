@@ -6,17 +6,15 @@ import { MainBody } from './components/MainBody';
 
 const App = () => {
 
-  const [section, onSectionChange] = useState('summary');
+  const [section, onSectionChange] = useState('experience');
 
   return (
     <Container className="mt-5">
       <Row className="mb-5">
-        <Col xs={12} md={3}>
-          <div className="image-box">
-            <Image src="https://chandrakiran-achanta-personal.s3.amazonaws.com/resume-pic-500.png" thumbnail/>
-          </div>
+        <Col xs={12} md={4} lg={3}>
+          <Image src="https://chandrakiran-achanta-personal.s3.amazonaws.com/resume-pic-500.png" fluid thumbnail/>
         </Col>
-        <Col xs={12} md={9}> 
+        <Col xs={12} md={8} lg={9}> 
           <div className="text-left">
             <h1 className="display-4">Chandra Kiran Achanta</h1>
             <p className="lead"> Experienced Frontend / Full Stack Developer</p>
@@ -28,7 +26,7 @@ const App = () => {
           </div>
         </Col>
       </Row>
-      <NavButtons onSectionChange={onSectionChange}/>
+        <NavButtons onSectionChange={onSectionChange}/>
       <Row className="main-section">
         <MainBody section={section}/>
       </Row>
