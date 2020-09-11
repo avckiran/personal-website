@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 export const NavButtons = ({ onSectionChange }) => {
 
-  const [currentSection, setCurrentSection] = useState('experience')
+  const [currentSection, setCurrentSection] = useState('summary')
 
   const buttonClick = e => {
     setCurrentSection(e.currentTarget.id);
@@ -23,10 +23,6 @@ export const NavButtons = ({ onSectionChange }) => {
     {
       label: 'Personal Projects',
       id: 'projects'
-    },
-    {
-      label: 'Books & Interests',
-      id: 'interests'
     }
   ]
 

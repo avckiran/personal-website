@@ -6,7 +6,7 @@ import { MainBody } from './components/MainBody';
 
 const App = () => {
 
-  const [section, onSectionChange] = useState('experience');
+  const [section, onSectionChange] = useState('summary');
 
   return (
     <Container className="mt-5">
@@ -29,9 +29,6 @@ const App = () => {
         <NavButtons onSectionChange={onSectionChange}/>
       <Row className="main-section">
         <MainBody section={section}/>
-      </Row>
-      <Row className="mt-5 p-5">
-        <div>Footer here!</div>
       </Row>
     </Container>
   )
