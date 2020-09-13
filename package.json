@@ -10,7 +10,7 @@
     ]
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack -p --mode=production",
     "start": "webpack-dev-server --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
