@@ -24,12 +24,9 @@ export const Summary = () => {
            </ >
          )}
         <h4>Skills: </h4>
-        <h6 className="mt-3">Frontend: </h6>
-        {frontend.map(skill => <span key={skill} className="m-2">{skill}</span> )}
-        <h6 className="mt-3">Backend: </h6>
-        {backend.map(skill => <span key={skill} className="m-2">{skill}</span> )}
-        <h6 className="mt-3">Database: </h6>
-        {database.map(skill => <span key={skill} className="m-2">{skill}</span> )}
+        {frontend.map(skill => <span key={skill} className="m-1">{skill}</span> )}
+        {backend.map(skill => <span key={skill} className="m-1">{skill}</span> )}
+        {database.map(skill => <span key={skill} className="m-1">{skill}</span> )}
         </Col>
         <Col xs={12} md={4}>
           <h4>Education:</h4>

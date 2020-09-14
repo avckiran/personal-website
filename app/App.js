@@ -20,7 +20,7 @@ const App = () => {
             <p className="lead"> Experienced Frontend / Full Stack Developer</p>
             <Row className="mb-3"> <ExternalLinks /> </Row>
 
-            <Button variant="success">
+            <Button variant="success" href='https://chandrakiran-achanta-personal.s3.amazonaws.com/Chandra_Resume_Sep20.pdf'>
               <i className="fas fa-download mr-2"></i>
               Download Resume</Button>
           </div>
